@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeya V - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        
+        header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        nav {
+            background: #667eea;
+            padding: 15px 40px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .content {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        section h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .skill-group {
+            margin-bottom: 20px;
+        }
+        
+        .skill-group strong {
+            color: #667eea;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .skill-item {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-item ul {
+            list-style: none;
+            margin-left: 10px;
+        }
+        
+        .skill-item li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .project-item, .experience-item {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #764ba2;
+        }
+        
+        .project-item h4, .experience-item h4 {
+            color: #764ba2;
+            margin-bottom: 8px;
+        }
+        
+        .project-item p, .experience-item p {
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border-top: 3px solid #667eea;
+        }
+        
+        footer p {
+            text-align: center;
+            color: #666;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .contact-info p {
+            margin: 8px 0;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            nav {
+                gap: 15px;
+            }
+            
+            .content, header, footer {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Karthikeya V</h1>
+            <p>ML Engineer | Researcher | Full-Stack Developer</p>
+            <p style="font-size: 0.95em; margin-top: 10px;">Passionate about Machine Learning, Computer Vision, and Biomedical Engineering</p>
+        </header>
+        
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="content">
+            <!-- About Section -->
+            <section id="about">
+                <h2>📋 About Me</h2>
+                <p>I am a graduate student pursuing advanced studies in Computer Science and Engineering with a strong focus on deep learning and computer vision. With 1.5 years of industry experience at AT&T and extensive research background in biomedical engineering and machine learning, I'm passionate about developing innovative AI solutions that make a real-world impact.</p>
+            </section>
+            
+            <!-- Education Section -->
+            <section id="education">
+                <h2>🎓 Education</h2>
+                <div class="experience-item">
+                    <h4>B.Tech in Computer Science and Engineering</h4>
+                    <p><strong>IIIT Hyderabad</strong> | First Class with Honors</p>
+                    <p>Specialized in Machine Learning and Computer Vision. Relevant coursework includes Deep Learning, Computer Vision, Fluid Mechanics, Data Structures, and Algorithms.</p>
+                </div>
+            </section>
+            
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2>💼 Experience</h2>
+                <div class="experience-item">
+                    <h4>Software Engineer</h4>
+                    <p><strong>AT&T</strong> | 1.5 Years</p>
+                    <p>• Developed and optimized machine learning models for production environments</p>
+                    <p>• Worked on computer vision applications and data pipeline optimization</p>
+                    <p>• Collaborated with cross-functional teams on AI/ML projects</p>
+                </div>
+            </section>
+            
+            <!-- Research Section -->
+            <section id="research">
+                <h2>🔬 Research</h2>
+                <div class="experience-item">
+                    <h4>Biomedical Engineering Research</h4>
+                    <p><strong>Aarhus University</strong> (International Collaboration)</p>
+                    <p>• Focused on machine learning applications in biomedical field</p>
+                    <p>• Computer vision and image processing for medical imaging</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Research Projects</h4>
+                    <p><strong>IIIT Hyderabad</strong></p>
+                    <p>• Deep learning-based image recognition and segmentation</p>
+                    <p>• Computer vision applications in healthcare</p>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>🚀 Projects</h2>
+                <div class="project-item">
+                    <h4>Applied ML for Healthcare Monitoring</h4>
+                    <p>Machine learning models for real-time health data analysis using Python, TensorFlow, and scikit-learn.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Image Generation System</h4>
+                    <p>Deep learning-based image synthesis and generation using GANs and advanced neural architectures.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Real-time Motion Synthesis</h4>
+                    <p>Computer vision for motion capture and analysis with real-time processing and visualization.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Legal Document GPT</h4>
+                    <p>NLP application for legal document analysis with fine-tuned language models.</p>
+                </div>
+                <div class="project-item">
+                    <h4>Ollama-Based Web App Chatbot</h4>
+                    <p>Interactive AI chatbot with modern web interface using React frontend and Express backend.</p>
+                </div>
+            </section>
+            
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>💻 Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <strong>Programming Languages</strong>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript/TypeScript</li>
+                            <li>React</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <strong>ML & AI</strong>
+                        <ul>
+                            <li>TensorFlow, PyTorch</li>
+                            <li>Deep Learning</li>
+                            <li>Computer Vision</li>
+                            <li>NLP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Web Development</strong>
+                        <ul>
+                            <li>Full-Stack Development</li>
+                            <li>React, Express, Node.js</li>
+                            <li>HTML, CSS</li>
+                            <li>Databases: SQL, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Tools & Technologies</strong>
+                        <ul>
+                            <li>Git, GitHub, Docker</li>
+                            <li>Jupyter, Colab</li>
+                            <li>Linux, VS Code</li>
+                            <li>CI/CD Pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>🔗 Connect With Me</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:kvkarthikeya02@gmail.com">kvkarthikeya02@gmail.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/kvkarthikeya" target="_blank">github.com/kvkarthikeya</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/kvkarthikeya" target="_blank">linkedin.com/in/kvkarthikeya</a></p>
+                </div>
+            </section>
+            
+            <!-- Research Interests Section -->
+            <section>
+                <h2>🎯 Research Interests</h2>
+                <div class="skill-item">
+                    <ul style="column-count: 2; column-gap: 20px;">
+                        <li>Deep Learning Architectures</li>
+                        <li>Computer Vision Applications</li>
+                        <li>Biomedical Engineering & Healthcare AI</li>
+                        <li>Gaussian Splatting and 3D Vision</li>
+                        <li>Augmented Reality in Healthcare</li>
+                        <li>Large Language Models and NLP</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>© 2025 Karthikeya V. All rights reserved. | Last Updated: December 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Crafted with passion for AI and Innovation</p>
+        </footer>
+    </div>
+</body>
+</html>
