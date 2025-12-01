@@ -12,9 +12,9 @@ Graduate student pursuing advanced studies in Computer Science and Engineering w
 ## 🎓 Education
 
 ### B.Tech in Computer Science and Engineering
-**IIIT Hyderabad** | First Class with Honors
+**Vasavi College of Engineering** | First Class with Honors
 - Specialized in Machine Learning and Computer Vision
-- Relevant Coursework: Deep Learning, Computer Vision, Fluid Mechanics, Data Structures, Algorithms
+- Relevant Coursework: Deep Learning, Computer Vision, Signal Processing , Machine Learning
 
 ---
 
