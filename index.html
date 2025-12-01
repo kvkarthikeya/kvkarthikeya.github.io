@@ -1,98 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karthikeya V | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeya V | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div id="main-content">
-    <header class="site-header">
-      <div class="profile-img">
-        <!-- Upload a photo to assets/img/profile.jpg -->
-      </div>
-      <h1>Karthikeya V</h1>
-      <div class="role">Machine Learning | Computer Vision | Biomedical Engineering</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#publications">Publications</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    <section id="about" class="site-section violet-bg section-reveal">
-      <h2>About Me</h2>
-      <p>
-        Graduate school applicant with deep experience in ML/AI and computer vision. Focused on real-world biomedical and industry applications. Seeking research collaborations and US graduate admissions.
-      </p>
+    <!-- Starfield Background -->
+    <div id="starfield"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Karthikeya</span>
+                <span class="logo-accent">V</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi There! <span class="wave">👋</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I'M <span class="accent-gradient">KARTHIKEYA V</span>
+                </h2>
+                <p class="hero-description">
+                    Researcher & Software Engineer exploring the intersection of AI, Computer Vision, and Biomedical Engineering
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cube"></div>
+            </div>
+        </div>
     </section>
-    <section id="education" class="site-section section-reveal">
-      <h2>Education</h2>
-      <div>B.Tech. Computer Science & Engineering (IIIT Hyderabad, First Class Honors)</div>
-      <div class="desc">Key coursework: Deep Learning, Fluid Mechanics, Computer Vision</div>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Graduate school applicant with deep experience in ML/AI and computer vision. Focused on real-world biomedical and industry applications. Seeking research collaborations and US graduate admissions.</p>
+                    <div class="highlight-box">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎓</span>
+                            <p><strong>B.Tech CSE (First Class Honors)</strong><br>IIIT Hyderabad</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💼</span>
+                            <p><strong>1.5 Years Experience</strong><br>Senior Associate @ AT&T</p>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🔬</span>
+                            <p><strong>Research Collaborations</strong><br>Aarhus & IIIT Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="publications" class="site-section section-reveal">
-      <h2>Publications</h2>
-      <ul>
-        <li>Research paper on multi-scale deep learning for medical image analysis (PDF on request)</li>
-        <li>Conference: AI in Biomedical Imaging (Aarhus University)</li>
-        <li>Project: ML for health monitoring (IIIT Hyderabad)</li>
-      </ul>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Associate Software Engineer</h3>
+                        <p class="role-company">AT&T | 1.5 Years (L3 Level)</p>
+                        <ul class="role-details">
+                            <li>Production-scale ML & CV models deployment</li>
+                            <li>Applied state-of-the-art models to real-world problems</li>
+                            <li>Cross-functional team collaboration on AI/ML projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="research" class="site-section section-reveal">
-      <h2>Research</h2>
-      <div>Aarhus University (Collaborator): Biomedical ML, medical imaging.</div>
-      <div>IIIT Hyderabad: Deep learning projects in vision and healthcare.</div>
-      <div class="tags">
-        <span class="tag">CV for Healthcare</span>
-        <span class="tag">Medical Image Segmentation</span>
-        <span class="tag">Collab: Aarhus Univ.</span>
-      </div>
+
+    <!-- Research Section -->
+    <section id="research" class="section research">
+        <div class="container">
+            <h2 class="section-title">Research & Collaborations</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-header">Aarhus University</div>
+                    <p><strong>Biomedical ML & Medical Imaging</strong></p>
+                    <p class="research-desc">International collaboration on machine learning applications in biomedical field and computer vision for medical imaging</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-header">IIIT Hyderabad</div>
+                    <p><strong>Deep Learning & Computer Vision</strong></p>
+                    <p class="research-desc">Deep learning-based image recognition, segmentation, and healthcare applications</p>
+                </div>
+                <div class="research-card">
+                    <div class="card-header">Publications</div>
+                    <p><strong>Multi-scale Deep Learning</strong></p>
+                    <p class="research-desc">Research on multi-scale deep learning for medical image analysis & AI in biomedical imaging</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="experience" class="site-section section-reveal">
-      <h2>Experience</h2>
-      <div><strong>AT&T</strong> — Senior Associate Engineer (1.5 yrs, L3 Level)
-        <ul>
-          <li>Production-scale ML & CV models</li>
-          <li>Optimized pipelines for real-world industry use</li>
-        </ul>
-      </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🏥</div>
+                    <h3>Healthcare Monitoring ML</h3>
+                    <p>ML models for real-time health data analysis using Python, TensorFlow, scikit-learn</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎨</div>
+                    <h3>Image Generation System</h3>
+                    <p>Deep learning-based image synthesis using GANs and advanced neural architectures</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎬</div>
+                    <h3>Motion Synthesis</h3>
+                    <p>Computer vision for motion capture, analysis, and real-time processing</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">⚖️</div>
+                    <h3>Legal Document GPT</h3>
+                    <p>NLP application for legal document analysis with fine-tuned language models</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">💬</div>
+                    <h3>AI Chatbot</h3>
+                    <p>Ollama-based chatbot with React frontend and Express backend</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🔮</div>
+                    <h3>Advanced Vision Research</h3>
+                    <p>Exploring Gaussian Splatting and cutting-edge computer vision techniques</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="projects" class="site-section section-reveal">
-      <h2>Projects</h2>
-      <ul>
-        <li>ML for Healthcare Monitoring — Python, TensorFlow</li>
-        <li>GAN-based Image Synthesis</li>
-        <li>Motion Capture with Computer Vision</li>
-        <li>Legal Document GPT — NLP, LLMs</li>
-        <li>Ollama: Web App AI Chatbot (React/Express)</li>
-      </ul>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>ML & AI</h4>
+                    <div class="skill-tags">
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Gaussian Splatting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Web & Backend</h4>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="skills" class="site-section section-reveal">
-      <h2>Skills</h2>
-      <div class="tags">
-        <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">React</span>
-        <span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">Full Stack Dev</span>
-        <span class="tag">NLP</span><span class="tag">Git</span><span class="tag">Docker</span>
-      </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Interested in collaborations, research opportunities, or just want to chat?</p>
+                <div class="contact-links">
+                    <a href="mailto:kvkarthikeya02@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        kvkarthikeya02@gmail.com
+                    </a>
+                    <a href="https://github.com/kvkarthikeya" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        github.com/kvkarthikeya
+                    </a>
+                    <a href="https://linkedin.com/in/kvkarthikeya" class="contact-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        linkedin.com/in/kvkarthikeya
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact" class="site-section section-reveal">
-      <h2>Contact & Socials</h2>
-      <div class="socials">
-        <a href="mailto:kvkarthikeya02@gmail.com" title="Email">Email</a>
-        <a href="https://github.com/kvkarthikeya" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/kvkarthikeya" target="_blank">LinkedIn</a>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-text">© 2025 Karthikeya V Portfolio. Crafted for ML/AI & CV research.</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Karthikeya V. Crafted with <span class="heart">❤️</span> and curiosity.</p>
     </footer>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
