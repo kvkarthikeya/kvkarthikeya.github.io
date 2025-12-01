@@ -1,1 +1,84 @@
-document.addEventListener('DOMContentLoaded',()=>{const navLinks=document.querySelectorAll('.nav-link');const navMenu=document.getElementById('navMenu');const navToggle=document.getElementById('navToggle');const appDiv=document.getElementById('app');let currentPage='home';const pages={home:homePage,about:aboutPage,experience:experiencePage,research:researchPage,publications:publicationsPage,projects:projectsPage,contact:contactPage};function renderPage(page){currentPage=page;appDiv.innerHTML=pages[page]();navLinks.forEach(link=>{link.classList.remove('active');if(link.getAttribute('data-page')===page){link.classList.add('active')}});if(navMenu.classList.contains('active')){navMenu.classList.remove('active');navToggle.classList.remove('active')}window.scrollTo(0,0)}navLinks.forEach(link=>{link.addEventListener('click',e=>{e.preventDefault();const page=link.getAttribute('data-page');renderPage(page)})});navToggle.addEventListener('click',()=>{navMenu.classList.toggle('active');navToggle.classList.toggle('active')});renderPage('home')});const homePage=()=>`<section class="section hero"><div class="hero-content"><div class="hero-text"><h1 class="hero-title">Hi There! <span class="wave">👋</span></h1><h2 class="hero-subtitle">I'M <span class="accent-gradient">KARTHIKEYA V</span></h2><p class="hero-description">Researcher & Software Engineer diving into AI, Computer Vision, and Biomedical Engineering</p><div class="hero-cta"><a href="#" onclick="event.preventDefault();document.querySelector('[data-page=\"projects\"]').click()" class="btn btn-primary">Explore My Work</a><a href="#" onclick="event.preventDefault();document.querySelector('[data-page=\"contact\"]').click()" class="btn btn-secondary">Get In Touch</a></div></div><div class="hero-visual"><div class="floating-cube"></div></div></div></section>`;const aboutPage=()=>`<section class="section about"><div class="container"><h2 class="section-title">About Me</h2><div class="about-content"><div class="about-text"><p>Graduate student pursuing advanced CS&E studies with deep expertise in ML/AI and computer vision. Focused on real-world biomedical and industry applications. Looking for research collaborations and graduate admissions at top-tier US universities.</p><div class="highlight-box"><div class="highlight-item"><span class="highlight-icon">🎓</span><p><strong>B.Tech CSE</strong><br>IIIT Hyderabad • First Class Honors</p></div><div class="highlight-item"><span class="highlight-icon">💼</span><p><strong>1.5 Years @ AT&T</strong><br>Senior Associate Engineer (L3)</p></div><div class="highlight-item"><span class="highlight-icon">🔬</span><p><strong>Active Research</strong><br>Aarhus & IIIT Hyderabad</p></div></div></div></div></div></section>`;const experiencePage=()=>`<section class="section experience"><div class="container"><h2 class="section-title">Experience</h2><div class="timeline"><div class="timeline-item"><div class="timeline-marker"></div><div class="timeline-content"><h3>Senior Associate Software Engineer</h3><p class="role-company">AT&T | 1.5 Years (Recruited at L3)</p><ul class="role-details"><li>Built and deployed production-scale ML & CV models</li><li>Applied cutting-edge AI models to solve real-world problems</li><li>Led cross-functional collaboration on enterprise AI/ML projects</li><li>Optimized data pipelines and model inference</li></ul></div></div></div></div></section>`;const researchPage=()=>`<section class="section research"><div class="container"><h2 class="section-title">Research</h2><div class="research-grid"><div class="research-card"><div class="card-header">🌍 Aarhus University</div><p><strong>Biomedical ML & Medical Imaging</strong></p><p class="research-desc">International collaboration on machine learning for biomedical applications and computer vision in medical imaging analysis</p></div><div class="research-card"><div class="card-header">🏛️ IIIT Hyderabad</div><p><strong>Deep Learning & Vision</strong></p><p class="research-desc">Research on image recognition, segmentation, and deep learning applications in healthcare</p></div></div></div></section>`;const publicationsPage=()=>`<section class="section"><div class="container"><h2 class="section-title">Publications</h2><div class="research-grid"><div class="research-card"><div class="card-header">📖 Multi-scale Deep Learning</div><p><strong>Medical Image Analysis</strong></p><p class="research-desc">Research paper on multi-scale architectures for medical image analysis</p></div><div class="research-card"><div class="card-header">📖 AI in Biomedical Imaging</div><p><strong>Conference Paper</strong></p><p class="research-desc">Presented at Aarhus University on applications of AI in biomedical imaging</p></div></div></div></section>`;const projectsPage=()=>`<section class="section projects"><div class="container"><h2 class="section-title">Projects</h2><div class="projects-grid"><div class="project-card"><div class="project-icon">🏥</div><h3>Healthcare Monitoring ML</h3><p>Real-time health data analysis using Python, TensorFlow, and scikit-learn</p></div><div class="project-card"><div class="project-icon">🎨</div><h3>Image Generation System</h3><p>Deep learning-based synthesis using GANs and advanced neural architectures</p></div><div class="project-card"><div class="project-icon">🎬</div><h3>Motion Synthesis</h3><p>Computer vision for motion capture, analysis, and real-time processing</p></div><div class="project-card"><div class="project-icon">⚖️</div><h3>Legal Document GPT</h3><p>NLP application for legal document analysis with fine-tuned language models</p></div><div class="project-card"><div class="project-icon">💬</div><h3>AI Chatbot Web App</h3><p>Ollama-powered chatbot with React frontend and Express backend</p></div><div class="project-card"><div class="project-icon">🔮</div><h3>Gaussian Splatting</h3><p>Exploring advanced 3D vision and neural rendering techniques</p></div></div></div></section>`;const contactPage=()=>`<section class="section contact"><div class="container"><h2 class="section-title">Get In Touch</h2><div class="contact-content"><p>Open to collaborations, research opportunities, and interesting conversations</p><div class="contact-links"><a href="mailto:kvkarthikeya02@gmail.com" class="contact-link"><i class="fas fa-envelope"></i>Email</a><a href="https://github.com/kvkarthikeya" class="contact-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a><a href="https://linkedin.com/in/kvkarthikeya" class="contact-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a></div></div></div></section>`
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navMenu = document.getElementById('navMenu');
+  const navToggle = document.getElementById('navToggle');
+  const appDiv = document.getElementById('app');
+  
+  const pages = {
+    home: homePage,
+    about: aboutPage,
+    experience: experiencePage,
+    research: researchPage,
+    publications: publicationsPage,
+    projects: projectsPage,
+    contact: contactPage
+  };
+  
+  function renderPage(page) {
+    appDiv.innerHTML = pages[page]();
+    
+    // Update active link
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-page') === page) {
+        link.classList.add('active');
+      }
+    });
+    
+    // Close mobile menu if open
+    if (navMenu.classList.contains('active')) {
+      navMenu.classList.remove('active');
+      navToggle.classList.remove('active');
+    }
+    
+    // Update URL hash
+    window.location.hash = `#/${page}`;
+    
+    // Scroll to top
+    window.scrollTo(0, 0);
+  }
+  
+  // Handle navigation link clicks
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const page = link.getAttribute('data-page');
+      renderPage(page);
+    });
+  });
+  
+  // Handle hash changes (back/forward buttons, direct URL)
+  window.addEventListener('hashchange', () => {
+    let hash = window.location.hash.slice(2) || 'home';
+    if (pages[hash]) {
+      renderPage(hash);
+    }
+  });
+  
+  // Handle mobile menu toggle
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navToggle.classList.toggle('active');
+  });
+  
+  // Load initial page from URL hash
+  let initialPage = window.location.hash.slice(2) || 'home';
+  if (!pages[initialPage]) {
+    initialPage = 'home';
+  }
+  renderPage(initialPage);
+});
+
+const homePage = () => `<section class="section hero"><div class="hero-content"><div class="hero-text"><h1 class="hero-title">Hi There! <span class="wave">👋</span></h1><h2 class="hero-subtitle">I'M <span class="accent-gradient">KARTHIKEYA V</span></h2><p class="hero-description">Researcher & Software Engineer diving into AI, Computer Vision, and Biomedical Engineering</p><div class="hero-cta"><a href="#/projects" class="btn btn-primary">Explore My Work</a><a href="#/contact" class="btn btn-secondary">Get In Touch</a></div></div><div class="hero-visual"><div class="floating-cube"></div></div></div></section>`;
+
+const aboutPage = () => `<section class="section about"><div class="container"><h2 class="section-title">About Me</h2><div class="about-content"><div class="about-text"><p>Graduate student pursuing advanced CS&E studies with deep expertise in ML/AI and computer vision. Focused on developing intelligent systems for biomedical imaging and real-world applications.</p><p>Currently exploring deep learning architectures, Gaussian Splatting, and applications of AI in healthcare. Strong foundation in both theoretical research and practical implementation.</p></div></div></section>`;
+
+const experiencePage = () => `<section class="section experience"><div class="container"><h2 class="section-title">Experience</h2><div class="experience-grid"><div class="experience-card"><h3>Software Engineer</h3><p class="company">AT&T</p><p class="duration">Full-time · 1.5 years</p><p>Developed and optimized data pipelines and model inference systems for enterprise AI/ML projects.</p></div><div class="experience-card"><h3>AI/ML Researcher</h3><p class="company">IIIT Hyderabad</p><p class="duration">Research Project</p><p>Conducted research in computer vision and machine learning under faculty guidance.</p></div><div class="experience-card"><h3>Biomedical Engineering Researcher</h3><p class="company">Aarhus University</p><p class="duration">Research Collaboration</p><p>Collaborated on biomedical engineering projects applying AI to medical imaging.</p></div></div></section>`;
+
+const researchPage = () => `<section class="section research"><div class="container"><h2 class="section-title">Research</h2><div class="research-content"><div class="research-item"><h3>Multi-scale Deep Learning for Medical Image Analysis</h3><p>Research on multi-scale architectures for medical image analysis and diagnostic systems.</p></div><div class="research-item"><h3>AI Applications in Biomedical Imaging</h3><p>Exploring deep learning applications in biomedical imaging and healthcare technology.</p></div><div class="research-item"><h3>Computer Vision & Advanced Visual Recognition</h3><p>Research in visual recognition systems, Gaussian Splatting, and advanced computer vision techniques.</p></div></div></section>`;
+
+const publicationsPage = () => `<section class="section publications"><div class="container"><h2 class="section-title">Publications</h2><div class="publications-grid"><div class="publication-card"><div class="publication-icon">📄</div><h3>Multi-scale Deep Learning</h3><p class="publication-type">Medical Image Analysis</p><p>Research paper on multi-scale architectures for medical image analysis</p></div><div class="publication-card"><div class="publication-icon">🎓</div><h3>AI in Biomedical Imaging</h3><p class="publication-type">Conference Paper</p><p>Presented at Aarhus University on applications of AI in biomedical imaging</p></div></div></section>`;
+
+const projectsPage = () => `<section class="section projects"><div class="container"><h2 class="section-title">Projects</h2><div class="projects-grid"><div class="project-card"><h3>Portfolio Website</h3><p>Modern space-themed portfolio with multi-page SPA routing and hash-based navigation.</p><p class="tech-stack">HTML • CSS • JavaScript</p></div><div class="project-card"><h3>Enterprise AI/ML Pipeline</h3><p>Optimized data pipeline and model inference system for enterprise applications.</p><p class="tech-stack">Python • Machine Learning</p></div><div class="project-card"><h3>Medical Image Analysis System</h3><p>Deep learning system for analyzing and processing medical images with multi-scale architectures.</p><p class="tech-stack">Python • TensorFlow • Computer Vision</p></div></div></section>`;
+
+const contactPage = () => `<section class="section contact"><div class="container"><h2 class="section-title">Get In Touch</h2><div class="contact-content"><p>I'm always interested in discussing research, AI applications, and innovative projects.</p><div class="contact-methods"><div class="contact-method"><h3>Email</h3><p><a href="mailto:your.email@example.com">your.email@example.com</a></p></div><div class="contact-method"><h3>LinkedIn</h3><p><a href="https://linkedin.com/in/yourprofile" target="_blank">Connect on LinkedIn</a></p></div><div class="contact-method"><h3>GitHub</h3><p><a href="https://github.com/kvkarthikeya" target="_blank">@kvkarthikeya</a></p></div></div></div></section>`;
