@@ -31,12 +31,12 @@ Graduate student pursuing advanced studies in Computer Science and Engineering w
 ## 🔬 Research
 
 ### Biomedical Engineering Research
-**Aarhus University** (International Collaboration)
+**University** (International Collaboration)
 - Focused on machine learning applications in biomedical field
 - Computer vision and image processing for medical imaging
 
 ### Research Projects
-**IIIT Hyderabad**
+**University**
 - Deep learning-based image recognition and segmentation
 - Computer vision applications in healthcare
 
