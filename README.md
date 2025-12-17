@@ -5,7 +5,7 @@ Welcome to my academic and professional portfolio! I am a passionate researcher 
 ---
 
 ## 📋 About Me
-Graduate student pursuing advanced studies in Computer Science and Engineering with focus on deep learning and computer vision. Experienced in full-stack development, machine learning applications, and research.
+Software Engineer at AT&T with focus on deep learning and computer vision. Experienced in full-stack development, machine learning applications, and research in 3d computer vision.
 
 ---
 
