@@ -46,7 +46,6 @@ Software Engineer at AT&T with focus on deep learning and computer vision. Exper
 
 - Research papers on biomedical engineering and computer vision applications
 - Contributions to conference proceedings in machine learning domain
-- Full list available upon request
 
 ---
 
