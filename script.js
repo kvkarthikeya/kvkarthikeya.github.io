@@ -264,7 +264,7 @@ const pub360ViewPage = () => `
       </div>
       <div class="publication-meta">
         <h3>Preprint</h3>
-        <p><a href="#" target="_blank" class="btn btn-primary">View Preprint</a></p>
+        <p><a href="https://arxiv.org/abs/2512.10293" target="_blank" class="btn btn-primary">View Preprint</a></p>
       </div>
       <div class="publication-meta">
         <h3>Description</h3>
