@@ -289,7 +289,7 @@ const pubAgspPage = () => `
       </div>
       <div class="publication-meta">
         <h3>Preprint</h3>
-        <p><a href="#" target="_blank" class="btn btn-primary">View Preprint (Coming Soon)</a></p>
+        <p><a href="https://arxiv.org/abs/2601.18589" target="_blank" class="btn btn-primary">View Preprint</a></p>
       </div>
       <div class="publication-meta">
         <h3>Description</h3>
@@ -363,8 +363,8 @@ const pubObjectRecognitionPage = () => `
         <p><span class="status-badge">Published</span> 2024 International Conference on Sustainable Communication Networks and Application (ICSCNA)</p>
       </div>
       <div class="publication-meta">
-        <h3>Preprint</h3>
-        <p><a href="#" target="_blank" class="btn btn-primary">View Paper (Coming Soon)</a></p>
+        <h3>Paper</h3>
+        <p><a href="https://ieeexplore.ieee.org/document/10864366" target="_blank" class="btn btn-primary">View Paper</a></p>
       </div>
       <div class="publication-meta">
         <h3>Description</h3>
@@ -388,8 +388,8 @@ const pubQuantumPage = () => `
         <p><span class="status-badge">Accepted</span> 2025 International Conference on Pervasive Computational Technologies (ICPCT)</p>
       </div>
       <div class="publication-meta">
-        <h3>Preprint</h3>
-        <p><a href="#" target="_blank" class="btn btn-primary">View Paper (Coming Soon)</a></p>
+        <h3>Paper</h3>
+        <p><a href="https://ieeexplore.ieee.org/document/10940638" target="_blank" class="btn btn-primary">View Paper</a></p>
       </div>
       <div class="publication-meta">
         <h3>Description</h3>
