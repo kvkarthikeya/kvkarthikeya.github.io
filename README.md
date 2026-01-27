@@ -11,7 +11,7 @@ Software Engineer at AT&T with focus on deep learning and computer vision. Exper
 
 ## 🎓 Education
 
-### B.Tech in Computer Science and Engineering
+### B.Tech in Electronics and Communication Engineering
 **Vasavi College of Engineering** | First Class with Honors
 - Specialized in Machine Learning and Computer Vision
 - Relevant Coursework: Deep Learning, Computer Vision, Signal Processing , Machine Learning
